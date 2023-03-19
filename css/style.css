@@ -1,0 +1,34 @@
+:root {
+    --clr-primary: #000;
+
+    --text-gray: #808291;
+    --text-white: #f8f9fa;
+    --text-light: #f6f6f6;
+
+    --ff-primary: 'Poppins', sans-serif;
+}
+
+/* ===== Simple Reset  ===== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--ff-primary);
+}
+/* ===== /Simple Reset  ===== */
+
+/* ===== Utilities Style ===== */
+.dflex {
+    display: flex;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+/* ===== /Utilities Style ===== */
