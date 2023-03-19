@@ -48,15 +48,174 @@ ul {
 /* ===== /Simple Reset  ===== */
 
 /* ===== Utilities Style ===== */
-.dflex {
+.container {
+    width: 100%;
+}
+.container-fluid {
+    width: 98%;
+}
+.d-flex {
     display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-initial {
+    flex: 0 1 auto;
+}
+.justify-center {
+    justify-content: center;
+}
+
+.d-inline {
+    display: inline-block;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-grid {
+    display: grid;
+}
+.cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.w-100 {
+    width: 100%;
+}
+.w-50 {
+    width: 100%;
 }
 
 .mx-auto {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.py-2 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.py-5 {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+.py-10 {
+    padding-top: 4.5em;
+    padding-bottom: 4.5em;
+}
+.px-5 {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+.px-10 {
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+}
+.link {
+    color: var(--text-dark2);
+    font-weight: 800;
+}
+.link:hover {
+    color: var(--text-red);
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn-primary {
+    padding: 0.8em 2em;
+    border-radius: 50px;
+    font-weight: 800;
+}
+.btn-primary:hover {
+    background: var(--bg-gradient-indigo);
+}
+.btn-shadow {
+    box-shadow: var(--box-shadow);
+}
+.bg-cover {
+    background: var(--bg-cover);
+    object-fit: fill;
 }
 
 .text-center {
     text-align: center;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.text-sm {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.text-md {
+    font-size: 1.5rem;
+}
+.text-lg {
+    font-size: 2.2rem;
+    line-height: 3rem;
+}
+.text-xl {
+    font-size: 3rem;
+}
+.text-2xl {
+    font-size: 5rem;
+}
+.font-bold {
+    font-weight: 800;
+}
+.text-dark {
+    color: var(--text-dark);
+}
+.text-dark2 {
+    color: var(--text-dark2);
+}
+.text-white {
+    color: var(--text-white);
+}
+.text-light {
+    color: var(--text-light);
+}
+.text-gray {
+    color: var(--text-gray);
+}
+.text-red {
+    color: var(--text-red);
+}
+
+.bg-gradient {
+    background: var(--bg-gradient);
+}
+.bg-gradient-indigo {
+    background: var(--bg-gradient-indigo);
+}
+.bg-gradient-peach {
+    background: var(--bg-gradient-peach);
+}
+.bg-blue {
+    background: var(--bg-blue);
+}
+.bg-red {
+    background: var(--bg-red);
+}
+.bg-yellow {
+    background: var(--bg-yellow);
+}
+.bg-purple {
+    background: var(--bg-purple);
 }
 /* ===== /Utilities Style ===== */
