@@ -69,6 +69,9 @@ ul {
 .flex-initial {
     flex: 0 1 auto;
 }
+.flex-grow {
+    flex-grow: 1;
+}
 .justify-center {
     justify-content: center;
 }
@@ -125,7 +128,7 @@ ul {
 }
 .link {
     color: var(--text-dark2);
-    font-weight: 800;
+    font-weight: 700;
 }
 .link:hover {
     color: var(--text-red);
@@ -139,7 +142,8 @@ ul {
 .btn-primary {
     padding: 0.8em 2em;
     border-radius: 50px;
-    font-weight: 800;
+    font-weight: 700;
+    color: var(--text-white);
 }
 .btn-primary:hover {
     background: var(--bg-gradient-indigo);
@@ -176,7 +180,7 @@ ul {
     font-size: 5rem;
 }
 .font-bold {
-    font-weight: 800;
+    font-weight: 700;
 }
 .text-dark {
     color: var(--text-dark);
@@ -219,3 +223,88 @@ ul {
     background: var(--bg-purple);
 }
 /* ===== /Utilities Style ===== */
+
+/* ===== Media Query ===== */
+/* large screen sm (640px)  */
+@media (min-width: 640px){
+
+}
+
+/* large screen md (768px)  */
+@media (min-width: 768px){
+
+}
+
+/* large screen lg (1024)  */
+@media (min-width: 1024px){
+    #primary-navigation {
+        flex-direction: row !important;
+    }
+    #primary-navigation .toggle-btn > button {
+        display: none;
+    }
+
+    .collapse {
+        max-height: initial !important;
+    }
+
+    .collapse ul {
+        flex-direction: row !important;
+    }
+}
+
+/* large screen lg (1280)  */
+@media (min-width: 1280px){
+    .container {
+        width: 1280px;
+    }
+    
+    #primary-navigation {
+        background: transparent !important;
+    }
+
+    #primary-navigation .flex-initial button {
+        display: inline-block !important;
+    }
+}
+/* ===== /Media Query ===== */
+
+/* ===== Navigation Style ===== */
+#primary-navigation {
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    padding: 1em 1.5em;
+    background: var(--text-light);
+    flex-direction: column;
+}
+#primary-navigation .collapse {
+    max-height: 0px;
+    overflow-y: hidden;
+    transition: all 0.5s ease-in-out;
+}
+#primary-navigation .collapse ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 3em;
+}
+#primary-navigation .collapse ul li {
+    padding: 0 1.5em;
+    line-height: 3em;
+    font-size: 1.1rem;
+}
+#primary-navigation .toggle-btn > button   {
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    color: var(--text-dark2);
+}
+#primary-navigation .flex-initial button {
+    display: none;
+}
+.active {
+    max-height: 50vh !important;
+}
+/* ===== /Navigation Style ===== */
