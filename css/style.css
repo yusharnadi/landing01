@@ -240,6 +240,9 @@ ul {
     .container {
         width: 768px;
     }
+    .md-text-left {
+        text-align: left;
+    }
 }
 
 /* large screen lg (1024)  */
@@ -260,6 +263,12 @@ ul {
 
     .collapse ul {
         flex-direction: row !important;
+    }
+    .lg-cols-2 {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+    .lg-cols-3 {
+        grid-template-columns: repeat(3, minmax(0,1fr));
     }
 }
 
@@ -333,3 +342,44 @@ ul {
     padding: 10em 0;
 }
 /* ===== /Hero Section Style ===== */
+
+/* ===== Agency Section Style ===== */
+.agency {
+    padding: 5em 0;
+}
+/* ===== /Agency Section Style ===== */
+
+/* ===== Digital Life Section Style ===== */
+.digital-life .d-grid {
+    column-gap: 10em;
+}
+.digital-life__grid-images {
+    display: grid;
+    grid-template-columns: repeat(16, minmax(10px, 1fr));
+    grid-template-rows: repeat(8, minmax(100px,1fr));
+}
+.digital-life__grid-images .item-one {
+    background-color: var(--text-gray);
+    grid-area: 2 / 1 / 5 / 8;
+    background: var(--bg-image1) no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    filter: blur(1px);
+}
+.digital-life__grid-images .item-two {
+    background-color: var(--text-gray);
+    grid-area: 1 / 9 / 4 / 16;
+    background: var(--bg-image2) no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    filter: blur(1px);
+}
+.digital-life__grid-images .item-three {
+    background-color: var(--text-gray);
+    grid-area: 3 / 4 / 8 / 14;
+    background: var(--bg-image3) no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    z-index: 99;
+}
+/* ===== /Digital Life Section Style ===== */
