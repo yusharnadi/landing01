@@ -227,16 +227,26 @@ ul {
 /* ===== Media Query ===== */
 /* large screen sm (640px)  */
 @media (min-width: 640px){
-
+    .container {
+        width: 648px;
+    }
+    .sm-text-xl {
+        font-size: 3rem;
+    }
 }
 
 /* large screen md (768px)  */
 @media (min-width: 768px){
-
+    .container {
+        width: 768px;
+    }
 }
 
 /* large screen lg (1024)  */
 @media (min-width: 1024px){
+    .container {
+        width: 1024px;
+    }
     #primary-navigation {
         flex-direction: row !important;
     }
@@ -308,3 +318,18 @@ ul {
     max-height: 50vh !important;
 }
 /* ===== /Navigation Style ===== */
+
+/* ===== Hero Section Style ===== */
+.hero {
+    width: 100%;
+    position: relative;
+    background: var(--bg-cover);
+    background-repeat: no-repeat;
+    background-position-x:right;
+    z-index: -99;
+}
+.hero .hero__title {
+    height: auto;
+    padding: 10em 0;
+}
+/* ===== /Hero Section Style ===== */
