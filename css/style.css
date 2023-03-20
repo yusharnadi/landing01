@@ -243,6 +243,9 @@ ul {
     .md-text-left {
         text-align: left;
     }
+    .md-mx-initial {
+        margin: initial;
+    }
 }
 
 /* large screen lg (1024)  */
@@ -383,3 +386,28 @@ ul {
     z-index: 99;
 }
 /* ===== /Digital Life Section Style ===== */
+
+/* ===== Count Stat Section Style ===== */
+.count-stat {
+    padding: 7em 0;
+}
+.count-stat p {
+    width: 80%;
+}
+.count-stat .count-box {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+.count-stat .count-box .d-grid {
+    /* display: inline-grid; */
+    gap: 2px;
+    border-radius: 20px;
+    background: var(--text-light);
+    box-shadow: var(--box-shadow);
+}
+.count-stat .count-box .d-grid > div {
+    background-color: white;
+    padding: 2em 2.5em;
+}
+/* ===== /Count Stat Section Style ===== */
