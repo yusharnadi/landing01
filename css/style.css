@@ -418,3 +418,13 @@ ul {
     row-gap: 2em;
 }
 /* ===== /Service Stat Section Style ===== */
+
+/* ===== Recent Work Stat Section Style ===== */
+.recent-work .recent-work__images-wrapper .image_item {
+    width: 360px;
+    margin-bottom: 50px;
+}
+.recent-work .recent-work__images-wrapper .image_item img{
+    border-radius: 10px;
+}
+/* ===== /Recent Work Stat Section Style ===== */

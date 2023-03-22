@@ -6,4 +6,13 @@ window.onload = function () {
         collapseEl.classList.toggle('active');
         // console.log(collapseEl);
     });
+
+    // MASONRY
+    let imgWrap = document.querySelector('.recent-work .recent-work__images-wrapper');
+
+    let msnry = new Masonry(imgWrap, {
+        itemSelector: '.recent-work .recent-work__images-wrapper .image_item',
+        fitWidth: true,
+        gutter: 100,
+    });
 };
