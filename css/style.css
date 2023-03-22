@@ -98,7 +98,7 @@ ul {
     width: 100%;
 }
 .w-50 {
-    width: 100%;
+    width: 50%;
 }
 
 .mx-auto {
@@ -232,6 +232,10 @@ ul {
     }
     .sm-text-xl {
         font-size: 3rem;
+    }
+    .sm-px-10 {
+        padding-left: 3.5em;
+        padding-right: 3.5em;
     }
 }
 
@@ -433,7 +437,14 @@ ul {
 .blog .d-grid {
     column-gap: 5em;
 }
-.blog article {
+.blog .d-grid article {
     border-radius: 10px;
 }
 /* ===== /Blog Section Style ===== */
+
+/* ===== Ready-cta Section Style ===== */
+.ready-cta .d-flex{
+    align-items: center;
+    justify-content: space-around;
+}
+/* ===== /Ready-cta Section Style ===== */
