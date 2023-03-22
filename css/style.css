@@ -419,7 +419,7 @@ ul {
 }
 /* ===== /Service Stat Section Style ===== */
 
-/* ===== Recent Work Stat Section Style ===== */
+/* ===== Recent Work Section Style ===== */
 .recent-work .recent-work__images-wrapper .image_item {
     width: 360px;
     margin-bottom: 50px;
@@ -427,4 +427,13 @@ ul {
 .recent-work .recent-work__images-wrapper .image_item img{
     border-radius: 10px;
 }
-/* ===== /Recent Work Stat Section Style ===== */
+/* ===== /Recent Work Section Style ===== */
+
+/* ===== Blog Section Style ===== */
+.blog .d-grid {
+    column-gap: 5em;
+}
+.blog article {
+    border-radius: 10px;
+}
+/* ===== /Blog Section Style ===== */
