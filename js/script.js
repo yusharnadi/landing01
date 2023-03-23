@@ -12,8 +12,12 @@ window.onload = function () {
 
     let msnry = new Masonry(imgWrap, {
         itemSelector: '.recent-work .recent-work__images-wrapper .image_item',
-        fitWidth: true,
+        // fitWidth: true,
         // percentPosition: true,
         gutter: 100,
     });
 };
+
+let relax = new Rellax('.relax', {
+    center: true,
+});
