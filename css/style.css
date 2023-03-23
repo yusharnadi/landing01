@@ -250,6 +250,9 @@ ul {
     .md-mx-initial {
         margin: initial;
     }
+    .md-cols-2 {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
 }
 
 /* large screen lg (1024)  */
@@ -276,6 +279,9 @@ ul {
     }
     .lg-cols-3 {
         grid-template-columns: repeat(3, minmax(0,1fr));
+    }
+    .lg-cols-4 {
+        grid-template-columns: repeat(4, minmax(0,1fr));
     }
 }
 
@@ -448,3 +454,34 @@ ul {
     justify-content: space-around;
 }
 /* ===== /Ready-cta Section Style ===== */
+
+/* ===== Footer Style ===== */
+#footer {
+    border-top: 2px solid var(--text-light);
+    margin-top: 8em;
+}
+#footer .d-grid {
+    column-gap: 3em;
+    padding: 6em 0;
+    border-bottom: 2px solid var(--text-light);
+} 
+#footer .d-grid input.subscribe-text {
+    padding: 1em;
+    font-size: 1rem;
+    border: none;
+    background-color: var(--text-light);
+    color: var(--text-dark);
+}
+#footer .d-grid input.subscribe-text:focus {
+    outline: none;
+}
+#footer .d-grid button.btn-go {
+    padding: 0 2em;
+    background-color: var(--text-light);
+    color: var(--text-dark);
+}
+#footer .d-grid button.btn-go:hover{
+    background-color: var(--text-dark2);
+    color: var(--text-white);
+}
+/* ===== /Footer Style ===== */
